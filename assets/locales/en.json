@@ -9,9 +9,13 @@
         "author": "Tim Claes",
         "keywords": ["cycling", "cycling manager", "fantasy cycling", "scorito", "sporza"]
     },
+    "core": {
+        "title": "Rouleur",
+        "subtitle": "Cycling Manager"
+    },
     "home": "Home",
     "feature": "Features",
-    "hero_title": "Get Ready for the Ultimate Cycling Fantasy Experience",
+    "hero_title": "A better cycling manager experience",
     "hero_content": "The next game starts March 1, 2025 - Prove you know more about cycling than your friends!",
     "feature_title_one": "Core Feature:",
     "team_overview": "Team Overview",
@@ -40,6 +44,6 @@
     "testimonial_content_2": "Super fun game!",
     "testimonial_name_3": "Steve V.S.",
     "testimonial_content_3": "I'm not playing any other cycling manager anymore, rouleur = 🤟",
-    "footer_content": "Simply the best cycling manage app! The powerups are a superb idea and give some dynamics in the competition.",
+    "footer_content": "",
     "privacy_policy": "Privacy Policy"
 }

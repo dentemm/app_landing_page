@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { AppStoreDownloadBtn, GooglePlayDownloadBtn } from '../custom/CustomDownloadBtn';
 import Link from 'next/link';
 import { CustomImage } from '../custom/CustomImage';
+import Logo from '../header/Logo';
 
 export default function Footer () {
     const t = useTranslations();
@@ -12,7 +13,7 @@ export default function Footer () {
             <div className="bg-[url('/images/bg_footer_section.png')] bg-cover flex justify-center">
                 <div className='w-full max-w-[1536px] flex flex-wrap justify-between items-center gap-12 md:gap-0 p-8 md:p-16'>
                     <div className='w-full md:w-1/3 flex flex-col items-center'>
-                        <p className='text-[40px] text-[#95B8D1] text-center'>Rouleur</p>
+                        <Logo />
                         <p className='text-[20px] text-white text-center mt-6'>{t('footer_content')}</p>
                         <Link className='mt-6 cursor-pointer bg-white rounded-lg' href={"https://x.com/RouleurBike"} target="_blank" aria-label='twitter for rouleur'>
                             <CustomImage

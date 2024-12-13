@@ -9,7 +9,10 @@ const Logo: React.FC<LogoProps> = ({
     return (
         <div className={cn('flex items-center gap-x-4', className)}>
             <Image src="/images/rouleur_logo.png" alt="rouleur_logo" className="rounded-full shadow-[0_10px_10px_rgba(184, 224, 210)]" width={48} height={48} />
-            <p className="hidden md:block text-[#95B8D1] text-[40px]">Rouleur</p>
+            <div className="flex flex-col">
+                <p className="hidden md:block font-semibold text-[#00AADC] text-[40px]">Rouleur</p>
+                <p className="hidden md:block font-thin text-[#00AADC] text-[18px] -mt-3">Cycling Manager</p>
+            </div>
         </div>
     )
 }

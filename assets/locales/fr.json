@@ -9,9 +9,13 @@
         "author": "Tim Claes",
         "keywords": ["cyclisme", "manager cycliste", "fantasy cyclisme", "scorito", "sporza"]
     },
+    "core": {
+        "title": "Rouleur",
+        "subtitle": "Manager cycliste"
+    },
     "home": "Accueil",
     "feature": "Fonction",
-    "hero_title": "Préparez-vous pour l'expérience ultime de cyclisme fantastique",
+    "hero_title": "Une meilleure expérience de manager cycliste",
     "hero_content": "Le prochain jeu commence le 1er mars 2025 - Prouvez que vous en savez plus sur le cyclisme que vos amis !",
     "feature_title_one": "Fonctionnalité principale:",
     "team_overview": "Aperçu de l'équipe",

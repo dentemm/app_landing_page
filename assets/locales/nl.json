@@ -9,9 +9,13 @@
         "author": "Tim Claes",
         "keywords": ["wielrennen", "wielermanager", "koers", "ploegleider", "cycling manager", "fantasy cycling", "scorito", "sporza"]
     },
+    "core": {
+        "title": "Rouleur",
+        "subtitle": "Wielermanager"
+    },
     "home": "Home",
     "feature": "Kenmerk",
-    "hero_title": "Maak je klaar voor de ultieme fietsfantasie-ervaring",
+    "hero_title": "Een wielermanager voor de echte wielerfan",
     "hero_content": "De volgende wedstrijd begint op 1 maart 2025. Laat zien dat je meer van fietsen weet dan je vrienden!",
     "feature_title_one": "Kernfunctie:",
     "team_overview": "Teamoverzicht",

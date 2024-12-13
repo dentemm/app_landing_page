@@ -35,7 +35,7 @@ export default function Header() {
                 <div>
                     <Logo className='h-16' />
                 </div>
-                <div className="hidden lg:flex gap-4 lg:gap-8 text-2xl font-extrabold text-white">
+                <div className="hidden lg:flex gap-4 lg:gap-8 text-2xl font-semibold text-white">
                     <Link 
                         href="/"
                         onClick={(e) => handleScroll(e, '#home')}
