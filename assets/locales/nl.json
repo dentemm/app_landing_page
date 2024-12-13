@@ -1,13 +1,13 @@
 {
     "meta": {
-        "title": "App-landingspagina",
-        "description": "Rouleur is een applicatie voor fietsers"
+        "title": "Rouleur - Wielermanager",
+        "description": "Rouleur is een wielermanager voor de echte wielerfan"
     },
     "og": {
-        "title": "App-landingspagina",
-        "description": "Rouleur is een applicatie voor fietsers",
+        "title": "Rouleur - Wielermanager",
+        "description": "Rouleur is een wielermanager voor de echte wielerfan",
         "author": "Tim Claes",
-        "keywords": ["fietsen", "sociale media", "fietsgemeenschap"]
+        "keywords": ["wielrennen", "wielermanager", "koers", "ploegleider", "cycling manager", "fantasy cycling", "scorito", "sporza"]
     },
     "home": "Home",
     "feature": "Kenmerk",
@@ -34,11 +34,11 @@
     "reason_title": "Waarom wielrenners van Rouleur houden",
     "reason_content": "Competeer met vrienden in Mini Leagues en verbind met andere wielerenthousiastelingen.",
     "testimonial": "Getuigenissen",
-    "testimonial_name_1": "Samuel Walravens",
+    "testimonial_name_1": "Samuel W.",
     "testimonial_content_1": "Gewoon de beste fietsmanager-app! De powerups zijn een superidee en geven wat dynamiek in de competitie.",
-    "testimonial_name_2": "Yassine Ryad",
+    "testimonial_name_2": "Yassine R.",
     "testimonial_content_2": "Deze app maakt fietsen een echt avontuur! Het is superleuk en boeiend, en maakt van elke rit een competitieve ervaring.",
-    "testimonial_name_3": "Steve V.S",
+    "testimonial_name_3": "Steve V.S.",
     "testimonial_content_3": "Ik speel geen enkele andere wielermanager meer, rouleur = 🤟",
     "footer_content": "Gewoon de beste fietsbeheer-app! De powerups zijn een superidee en geven wat dynamiek in de competitie.",
     "privacy_policy": "Privacybeleid"

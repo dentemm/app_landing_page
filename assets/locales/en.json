@@ -1,13 +1,13 @@
 {
     "meta": {
-        "title": "App Landing Page",
-        "description": "Rouleur is an application for cyclists"
+        "title": "Rouleur - Cycling Manager",
+        "description": "Rouleur is a cycling manager for the real cycling fan"
     },
     "og": {
-        "title": "App Landing Page",
-        "description": "Rouleur is an application for cyclists",
+        "title": "Rouleur - Cycling Manager",
+        "description": "Rouleur is a cycling manager for the real cycling fan",
         "author": "Tim Claes",
-        "keywords": ["cycling", "social media", "cycling community"]
+        "keywords": ["cycling", "cycling manager", "fantasy cycling", "scorito", "sporza"]
     },
     "home": "Home",
     "feature": "Feature",
@@ -34,11 +34,11 @@
     "reason_title": "Why Cyclists Love Rouleur",
     "reason_content": "Compete with friends in Mini Leagues and connect with other cycling enthusiasts",
     "testimonial": "Testimonials",
-    "testimonial_name_1": "Samuel Walravens",
+    "testimonial_name_1": "Samuel W.",
     "testimonial_content_1": "Simply the best cycling manager app! The powerups are a superb idea and give some dynamics in the competition.",
-    "testimonial_name_2": "Yassine Ryad",
+    "testimonial_name_2": "Yassine R.",
     "testimonial_content_2": "This app makes cycling feel like a real adventure! It's super fun and engaging, turning every ride into a competitive experience.",
-    "testimonial_name_3": "Steve V.S",
+    "testimonial_name_3": "Steve V.S.",
     "testimonial_content_3": "I'm not playing any other cycling manager anymore, rouleur = 🤟",
     "footer_content": "Simply the best cycling manage app! The powerups are a superb idea and give some dynamics in the competition.",
     "privacy_policy": "Privacy Policy"
