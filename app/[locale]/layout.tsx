@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { NextIntlClientProvider } from "next-intl";
-import type { AbstractIntlMessages } from 'next-intl'
 import "../../assets/css/globals.css";
 
 // Import messages directly
 import enMessages from '@/assets/locales/en.json';
 import nlMessages from '@/assets/locales/nl.json';
 import frMessages from '@/assets/locales/fr.json';
-// Create messages object with proper typing
+
+// Define supported locales
+const locales = ['en', 'nl', 'fr'];
 
 const messages: Record<string, typeof enMessages> = {
   en: enMessages,
@@ -17,10 +18,6 @@ const messages: Record<string, typeof enMessages> = {
   fr: frMessages,
 };
 
-// Define supported locales
-const locales = ['en', 'nl'];
-
-// Add this function
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -41,12 +38,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export async function generateMetadata({
+export function generateMetadata({
   params: { locale }
 }: {
   params: { locale: string }
-}): Promise<Metadata> {
-  // Use messages directly instead of getTranslations
+}): Metadata {
   const t = messages[locale as keyof typeof messages];
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
@@ -85,12 +81,11 @@ export async function generateMetadata({
   }
 }
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
   params: { locale }
 }: LayoutProps) {
-  // Use messages directly instead of getMessages
-  const localeMessages: AbstractIntlMessages = messages[locale];
+  const localeMessages = messages[locale as keyof typeof messages];
 
   return (
     <html lang={locale} suppressHydrationWarning>
