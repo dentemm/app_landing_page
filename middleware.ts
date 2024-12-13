@@ -11,6 +11,10 @@ const intlMiddleware = createMiddleware({
 export function middleware(request: NextRequest) {
     const { pathname } = request.nextUrl;
 
+    if (pathname.includes('/.well-known/')) {
+        return NextResponse.next();
+    }
+
     for (const locale of locales) {
         if (pathname.startsWith(`/${locale}/`)) {
             const invalidPath = pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}/`;
@@ -34,6 +38,6 @@ export function middleware(request: NextRequest) {
 export const config = {
     matcher: [
         '/((?!api|_next/static|_next/image|header_icon.ico|images).*)',
-        '/(fr|nl|en)/:path*'
+        '/(fr|nl|en)/:path*',
     ]
 }
