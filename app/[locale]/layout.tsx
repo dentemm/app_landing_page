@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import { ThemeProvider } from "@/components/ThemeProvider";
 import { NextIntlClientProvider } from "next-intl";
 import "../../assets/css/globals.css";
 
