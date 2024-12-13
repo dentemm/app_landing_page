@@ -1,11 +1,11 @@
 {
     "meta": {
-        "title": "Your Site Title",
-        "description": "Your site description"
+        "title": "Rouleur - Cycling Manager",
+        "description": "A better cycling manager experience"
     },
     "og": {
-        "title": "Your OG Title",
-        "description": "Your OG description"
+        "title": "Rouleur - Cycling Manager",
+        "description": "A better cycling manager experience"
     },
     "core": {
         "title": "Rouleur",

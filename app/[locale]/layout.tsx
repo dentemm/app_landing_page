@@ -8,6 +8,7 @@ import "../../assets/css/globals.css";
 import enMessages from '@/assets/locales/en.json';
 import nlMessages from '@/assets/locales/nl.json';
 import frMessages from '@/assets/locales/fr.json';
+import MetaData from "@/components/meta/MetaData";
 
 // Define supported locales
 const locales = ['en', 'nl', 'fr'];
@@ -102,6 +103,7 @@ export default function RootLayout({
           as="image"
         />
         <link rel="icon" href="/header_icon.ico" sizes="any" />
+        <MetaData />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
