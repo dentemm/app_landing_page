@@ -1,4 +1,3 @@
-import { IntlErrorCode } from "next-intl";
 import { Pathnames } from "next-intl/routing";
 import { getRequestConfig } from "next-intl/server";
 
@@ -27,26 +26,14 @@ export const pathnames = {
 
 export const defaultLocale = 'nl';
 
-export default getRequestConfig(async ({ requestLocale }) => {
-
-    let locale = await requestLocale || defaultLocale;
-    
-    if (!locales.includes(requestLocale as unknown as string)) {
-        locale = defaultLocale;
-    }
-
+export default getRequestConfig(async () => {
     return {
-        messages: (await import(`../assets/locales/${locale}.json`)).default,
+        messages: (await import(`../assets/locales/${defaultLocale}.json`)).default,
         onError(error) {
             console.error(error);
         },
-        getMessageFallback({ namespace, key, error }) {
-            let path = [namespace, key].filter((part) => part != null).join('.');
-            if (error.code === IntlErrorCode.MISSING_MESSAGE) {
-                return path += 'is not yet translated';
-            } else {
-                return 'Dear developer, please fix this message: ' + path;
-            }
+        getMessageFallback({ key }) {
+            return key;
         },
     }
 })
