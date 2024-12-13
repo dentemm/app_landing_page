@@ -26,7 +26,7 @@ export const pathnames = {
     '/': '/',
 } satisfies Pathnames<typeof locales>;
 
-export const defaultLocale = 'en';
+export const defaultLocale = 'nl';
 
 export default getRequestConfig(async ({ locale }) => {
     if (!locales.includes(locale as any)) notFound();
