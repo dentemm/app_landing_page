@@ -57,7 +57,7 @@ export default function Header() {
                     </Link>
                 </div>
                 <div className="flex items-center gap-x-6">
-                    <ThemeSwitcher />
+                    {/* <ThemeSwitcher /> */}
                     <LangSwitcher className="w-10 md:w-40" />
                 </div>
             </div>
