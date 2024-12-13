@@ -1,21 +1,14 @@
 import localFont from "next/font/local";
-import { NextIntlClientProvider } from "next-intl";
+import { I18nextProvider } from 'react-i18next';
+import i18n from 'i18next';
+
 import "../assets/css/globals.css";
 
 // Import messages directly
-import enMessages from '@/assets/locales/en.json';
-import nlMessages from '@/assets/locales/nl.json';
-import frMessages from '@/assets/locales/fr.json';
 import MetaData from "@/components/meta/MetaData";
 
 // Define supported locales
 const locales = ['en', 'nl', 'fr'];
-
-const messages: Record<string, typeof enMessages> = {
-  en: enMessages,
-  nl: nlMessages,
-  fr: frMessages,
-};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -43,10 +36,8 @@ export default function RootLayout({
 
   const locale = "nl";
 
-  const localeMessages = messages[locale as keyof typeof messages];
-
   return (
-    <NextIntlClientProvider locale={locale} messages={localeMessages} now={new Date()} timeZone="Europe/Brussels">
+    <I18nextProvider i18n={i18n}>
     <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -69,6 +60,6 @@ export default function RootLayout({
           {children}
       </body>
     </html>
-    </NextIntlClientProvider>
+    </I18nextProvider>
   );
 }
