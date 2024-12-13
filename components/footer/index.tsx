@@ -12,9 +12,8 @@ export default function Footer () {
         <div className='bg-[#000000]'>
             <div className="bg-[url('/images/bg_footer_section.png')] bg-cover flex justify-center">
                 <div className='w-full max-w-[1536px] flex flex-wrap justify-between items-center gap-12 md:gap-0 p-8 md:p-16'>
-                    <div className='w-full md:w-1/3 flex flex-col items-center'>
+                    <div className='w-full md:w-1/3 flex flex-col items-center gap-8'>
                         <Logo />
-                        <p className='text-[20px] text-white text-center mt-6'>{t('footer_content')}</p>
                         <Link className='mt-6 cursor-pointer bg-white rounded-lg' href={"https://x.com/RouleurBike"} target="_blank" aria-label='twitter for rouleur'>
                             <CustomImage
                                 src="/images/twitterx-icon.png"

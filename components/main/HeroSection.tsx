@@ -35,9 +35,9 @@ const HeroSection = () => {
                             loop: true
                         }}
                         plugins={[
-                            Autoplay({
-                                delay: 2000,
-                            })
+                            // Autoplay({
+                            //     delay: 2000,
+                            // })
                         ]}
                         className='w-[150px] sm:w-[200px] md:w-[300px]'
                     >

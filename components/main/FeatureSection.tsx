@@ -14,22 +14,30 @@ export default function FeatureSection () {
                         <div className='w-full md:w-1/2 order-2 md:order-1'>
                         <p className='text-[20px] sm:text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] 2xl:text-[56px] text-center md:text-left font-bold leading-tight'>{t('feature_title_one')}</p>
                             <div>
-                                <p className='pt-4 md:pt-8 text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] leading-6 md:leading-10'>{t('team_overivew_content')}</p>
+                                <p className='pt-4 md:pt-8 text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] leading-6 md:leading-normal'>{t('team_overivew_content')}</p>
                             </div>
                             <div className='pt-[70px]'>
-                                <p className='font-bold text-[24px] sm:text[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-10'>{t('user_benefits')}</p>
-                                <div className='pt-4 md:pt-8 flex flex-col gap-1'>
-                                    <div className='flex gap-x-2'>
-                                        <Icons.check className='min-w-[16px] min-h-[16px]' />
+                                <p className='font-bold text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] leading-10'>{t('user_benefits')}</p>
+                                <div className='pt-4 md:pt-8 flex flex-col gap-2'>
+                                    <div className='flex gap-x-4 items-center'>
+                                        <Icons.check size={32} />
                                         <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'>{t('user_benefits_content_one')}</p>
                                     </div>
-                                    <div className='flex gap-x-2'>
-                                        <Icons.check className='min-w-[16px] min-h-[16px]' />
+                                    <div className='flex gap-x-4 items-center'>
+                                        <Icons.check size={32} />
                                         <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'>{t('user_benefits_content_second')}</p>
                                     </div>
-                                    <div className='flex gap-x-2'>
-                                        <Icons.check className='min-w-[16px] min-h-[16px]' />
+                                    <div className='flex gap-x-4 items-center'>
+                                        <Icons.check size={32} />
                                         <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'>{t('user_benefits_content_third')}</p>
+                                    </div>
+                                    <div className='flex gap-x-4 items-center'>
+                                        <Icons.check size={32} />
+                                        <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'>{t('user_benefits_content_fourth')}</p>
+                                    </div>
+                                    <div className='flex gap-x-4 items-center'>
+                                        <Icons.check size={32} />
+                                        <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'>{t('user_benefits_content_fifth')}</p>
                                     </div>
                                 </div>
                             </div>
@@ -46,12 +54,12 @@ export default function FeatureSection () {
                     <div className='w-full md:w-1/2 p-8 md:pr-16 max-w-[768px]'>
                         <p className='font-bold text-[20px] sm:text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] 2xl:text-[56px] leading-7 text-end'>{t('feature_title_second')}</p>
                         <div className='w-full flex justify-end'>
-                            <div className='w-2/3'>
+                            <div className='w-3/4'>
                                 <p className='pt-8 text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] leading-6 md:leading-10 text-end'>{t('second_feature_content')}</p>
                             </div>
                         </div>
                         <div className='pt-8 flex items-center gap-x-2 justify-end'>
-                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Spring Classics</strong></p>
+                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>{t('cycling.classics')}</strong></p>
                             <Icons.check className='min-w-[16px] min-h-[16px]' />
                         </div>
                         <div className='flex items-center gap-x-2 justify-end'>
