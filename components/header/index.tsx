@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 import { cn } from "@/utils/cn";
 import Logo from "./Logo";
 import { LangSwitcher } from "./LangSwitcher";
-import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function Header() {
     const { scrollY } = useScroll();

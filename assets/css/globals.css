@@ -43,7 +43,7 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 260 8% 7%;
     --convert_bg: 0 0% 100%;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;

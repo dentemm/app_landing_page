@@ -62,11 +62,13 @@ const config: Config = {
 			'community-background': "linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.45)), url('/images/bg_community_section.png')",
 		},
 		boxShadow: {
-			'download-btn': '5px 5px 10px #808080, -5px -5px 10px #ffffff',
-			'testimonial': '0 24px 24px rgba(89, 89, 89, 0.25)'
+			'download-btn': '7px 7px 4px rgba(10, 10, 10, 1), -4px -4px 8px rgba(255, 255, 255, 0.5)',
+			'testimonial': 'inset 7px 7px 8px #000, inset -4px -4px 10px rgba(255, 255, 255, 0.25)'
 		}
   	},
   },
+	// eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 };
 export default config;
+
