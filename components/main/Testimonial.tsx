@@ -8,7 +8,7 @@ export default function Testimonial () {
     return (
         <div id='testimonial' className='bg-background flex justify-center'>
             <div className='w-full max-w-[1536px] p-8 md:p-16'>
-                <p className='text-center text-[32px] md:text-[36px] 2xl:text-[40px] font-extrabold'>
+                <p className='text-center text-[32px] md:text-[36px] 2xl:text-[40px] font-bold'>
                     {t('reason_title')}
                 </p>
                 <p className='text-center text-[24px] md:text-[28px] 2xl:text-[32px]'>{t('reason_content')}</p>

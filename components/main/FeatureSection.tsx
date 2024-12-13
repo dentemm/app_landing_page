@@ -12,13 +12,12 @@ export default function FeatureSection () {
                 <div className='w-full max-w-[1536px]'>
                     <div className='flex flex-wrap items-center py-16 px-8 md:px-16'>
                         <div className='w-full md:w-1/2 order-2 md:order-1'>
-                            <p className='underline font-extrabold text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px] leading-10'>{t('feature_title_one')}</p>
+                        <p className='text-[20px] sm:text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] 2xl:text-[56px] text-center md:text-left font-bold leading-tight'>{t('feature_title_one')}</p>
                             <div>
-                                <p className='pt-2 md:pt-5 font-extrabold text-[24px] sm:text[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-10'>{t("team_overview")}</p>
                                 <p className='pt-4 md:pt-8 text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] leading-6 md:leading-10'>{t('team_overivew_content')}</p>
                             </div>
                             <div className='pt-[70px]'>
-                                <p className='font-extrabold text-[24px] sm:text[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-10'>{t('user_benefits')}</p>
+                                <p className='font-bold text-[24px] sm:text[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-10'>{t('user_benefits')}</p>
                                 <div className='pt-4 md:pt-8 flex flex-col gap-1'>
                                     <div className='flex gap-x-2'>
                                         <Icons.check className='min-w-[16px] min-h-[16px]' />
@@ -45,27 +44,26 @@ export default function FeatureSection () {
                         <CustomImage src={'/images/season_game_image.png'} alt='season_game_image' className='w-full md:w-[400px] lg:w-[700px] h-auto' />
                     </div>
                     <div className='w-full md:w-1/2 p-8 md:pr-16 max-w-[768px]'>
-                        <p className='underline font-extrabold text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px] leading-7 text-end'>{t('feature_title_second')}</p>
-                        <p className='pt-5 font-extrabold text-[24px] sm:text[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[48px] leading-10 text-end'>{t('second_feature_title')}</p>
+                        <p className='font-bold text-[20px] sm:text-[28px] md:text-[32px] lg:text-[40px] xl:text-[48px] 2xl:text-[56px] leading-7 text-end'>{t('feature_title_second')}</p>
                         <div className='w-full flex justify-end'>
                             <div className='w-2/3'>
                                 <p className='pt-8 text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px] leading-6 md:leading-10 text-end'>{t('second_feature_content')}</p>
                             </div>
                         </div>
                         <div className='pt-8 flex items-center gap-x-2 justify-end'>
-                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Spring Classics</strong> - {t('season_one')}</p>
+                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Spring Classics</strong></p>
                             <Icons.check className='min-w-[16px] min-h-[16px]' />
                         </div>
                         <div className='flex items-center gap-x-2 justify-end'>
-                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Giro d&apos;Italia</strong> - {t('season_second')}</p>
+                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Giro d&apos;Italia</strong></p>
                             <Icons.check className='min-w-[16px] min-h-[16px]' />
                         </div>
                         <div className='flex items-center gap-x-2 justify-end'>
-                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Tour de France</strong> - {t('season_third')}</p>
+                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Tour de France</strong></p>
                             <Icons.check className='min-w-[16px] min-h-[16px]' />
                         </div>
                         <div className='flex items-center gap-x-2 justify-end'>
-                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Vuelta à España - {t('season_fourth')}</strong></p>
+                            <p className='text-[16px] md:text-[20px] lg:text-[24px] xl:text-[28px] 2xl:text-[32px]'><strong>Vuelta à España</strong></p>
                             <Icons.check className='min-w-[16px] min-h-[16px]' />
                         </div>
                         <p className='pt-10 text-[20px] md:text-[24px] lg:text-[28px] 2xl:text-[32px] text-end'>{t('season_content')}</p>

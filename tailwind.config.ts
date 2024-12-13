@@ -58,13 +58,16 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		backgroundImage: {
-			'hero-background': "linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.45)), url('/images/bg_hero_section.jpg')",
+			'hero-background': "linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('/images/bg_hero_section.jpg')",
 			'community-background': "linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.45)), url('/images/bg_community_section.png')",
 		},
 		boxShadow: {
 			'download-btn': '7px 7px 4px rgba(10, 10, 10, 1), -4px -4px 8px rgba(255, 255, 255, 0.5)',
 			'testimonial': 'inset 7px 7px 8px #000, inset -4px -4px 10px rgba(255, 255, 255, 0.25)'
-		}
+		},
+		backdropBlur: {
+			xs: '2px',
+		},
   	},
   },
 	// eslint-disable-next-line @typescript-eslint/no-require-imports
