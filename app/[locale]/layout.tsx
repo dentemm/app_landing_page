@@ -1,5 +1,3 @@
-"use client";
-
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { NextIntlClientProvider } from "next-intl";
@@ -48,6 +46,7 @@ export default function RootLayout({
   const localeMessages = messages[locale as keyof typeof messages];
 
   return (
+    <NextIntlClientProvider locale={locale} messages={localeMessages}>
     <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,18 +66,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute={"class"}
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-            <NextIntlClientProvider locale={locale} messages={localeMessages}>
-                {children}
-            </NextIntlClientProvider>
-        </ThemeProvider>
+          {children}
       </body>
     </html>
+    </NextIntlClientProvider>
   );
 }
 
