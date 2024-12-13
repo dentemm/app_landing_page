@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client";
+
 import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { NextIntlClientProvider } from "next-intl";
@@ -39,53 +40,11 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export function generateMetadata({
-  params: { locale }
-}: {
-  params: { locale: string }
-}): Metadata {
-  const t = messages[locale as keyof typeof messages];
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-
-  return {
-    metadataBase: new URL(baseUrl),
-    title: {
-      default: t.meta.title,
-      template: `%s | ${t.meta.title}`,
-    },
-    description: t.meta.description,
-    openGraph: {
-      type: "website",
-      title: t.og.title,
-      description: t.og.description,
-      url: process.env.NEXT_PUBLIC_SITE_URL,
-      siteName: 'Rouleur',
-      images: [
-        {
-          url: '/images/rouleur_logo.png',
-          alt: 'rouleur'
-        }
-      ]
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: t.og.title,
-      description: t.og.description,
-      creator: 'Tim Claes'
-    },
-      alternates: {
-        canonical: `${baseUrl}${locale === 'en' ? '' : `/${locale}`}`,
-      languages: {
-        [locale]: `${baseUrl}${locale === 'en' ? '' : `/${locale}`}`,
-      },
-    },
-  }
-}
-
 export default function RootLayout({
   children,
   params: { locale }
 }: LayoutProps) {
+
   const localeMessages = messages[locale as keyof typeof messages];
 
   return (
