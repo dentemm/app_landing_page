@@ -10,7 +10,7 @@ export default function Footer () {
     const t = useTranslations();
     return (
         <div className='bg-[#000000]'>
-            <div className="bg-[url('/images/bg_footer_section.png')] bg-cover flex justify-center">
+            <div className="bg-[url('/images/bg_footer_section.png')] bg-cover bg-center flex justify-center">
                 <div className='w-full max-w-[1536px] flex flex-wrap justify-between items-center gap-12 md:gap-0 p-8 md:p-16'>
                     <div className='w-full md:w-1/3 flex flex-col items-center gap-8'>
                         <Logo />
