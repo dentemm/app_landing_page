@@ -1,0 +1,11 @@
+{
+  "applinks": {
+      "apps": [],
+      "details": [
+           {
+             "appID": "XR2XXXAC6K.be.thinkmobile.rouleur-new",
+             "paths": [ "*" ]
+           }
+       ]
+   }
+}

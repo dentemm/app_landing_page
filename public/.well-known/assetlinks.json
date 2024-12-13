@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "be.thinkmobile.rouleur",
+      "sha256_cert_fingerprints": ["45:B6:F8:B3:94:29:5D:13:FA:54:36:70:E9:C6:A2:38:8E:AC:01:32:9A:8D:74:94:D1:44:57:83:E6:9B:0D:AA"]
+    }
+  }
+]
