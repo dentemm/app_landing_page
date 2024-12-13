@@ -38,3 +38,6 @@ next-env.d.ts
 # SEO files
 robots.txt
 sitemap*.xml
+
+# firebase
+.firebase/
