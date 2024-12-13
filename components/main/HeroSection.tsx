@@ -5,7 +5,7 @@ import { CustomImage } from '../custom/CustomImage';
 import { useTranslations } from 'next-intl';
 import { AppStoreDownloadBtn, GooglePlayDownloadBtn } from '../custom/CustomDownloadBtn';
 import { Carousel, CarouselItem, CarouselContent } from '../ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
+// import Autoplay from 'embla-carousel-autoplay';
 
 const HeroSection = () => {
     const t = useTranslations();
