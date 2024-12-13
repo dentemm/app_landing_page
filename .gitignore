@@ -41,3 +41,6 @@ sitemap*.xml
 
 # firebase
 .firebase/
+
+# env
+.env
