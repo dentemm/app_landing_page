@@ -13,5 +13,5 @@ export default function Home() {
 }
 
 export function generateStaticParams() {
-  return [{ locale: 'en' }, { locale: 'nl' }];
+  return [{ locale: 'en' }, { locale: 'nl' }, { locale: 'fr' }];
 }

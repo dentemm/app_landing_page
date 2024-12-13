@@ -1,13 +1,12 @@
 import { IntlErrorCode } from "next-intl";
 import { Pathnames } from "next-intl/routing";
 import { getRequestConfig } from "next-intl/server";
-import { notFound } from "next/navigation";
 
 export const locales = ['en', 'nl', 'fr'];
 
 export const localePrefix = "as-needed";
 
-export const localeNames: any = {
+export const localeNames: Record<string, { name: string; country: string }> = {
     en: {
         name: 'English',
         country: 'GB'
@@ -28,8 +27,13 @@ export const pathnames = {
 
 export const defaultLocale = 'nl';
 
-export default getRequestConfig(async ({ locale }) => {
-    if (!locales.includes(locale as any)) notFound();
+export default getRequestConfig(async ({ requestLocale }) => {
+
+    let locale = await requestLocale || defaultLocale;
+    
+    if (!locales.includes(requestLocale as unknown as string)) {
+        locale = defaultLocale;
+    }
 
     return {
         messages: (await import(`../assets/locales/${locale}.json`)).default,
