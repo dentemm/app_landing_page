@@ -1,5 +1,4 @@
 import localFont from "next/font/local";
-import { ThemeProvider } from "@/components/ThemeProvider";
 import { NextIntlClientProvider } from "next-intl";
 import "../../assets/css/globals.css";
 
@@ -9,9 +8,6 @@ import nlMessages from '@/assets/locales/nl.json';
 import frMessages from '@/assets/locales/fr.json';
 import MetaData from "@/components/meta/MetaData";
 
-// Define supported locales
-const locales = ['en', 'nl', 'fr'];
-
 const messages: Record<string, typeof enMessages> = {
   en: enMessages,
   nl: nlMessages,
@@ -19,7 +15,7 @@ const messages: Record<string, typeof enMessages> = {
 };
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return [{ locale: 'en' }, { locale: 'nl' }, { locale: 'fr' }];
 }
 
 type LayoutProps = {
@@ -38,44 +34,34 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const metadata = {
+  icons: {
+    icon: '/header_icon.ico',
+  },
+}
+
 export default function RootLayout({
   children,
   params: { locale }
 }: LayoutProps) {
-  const localeMessages = messages[locale as keyof typeof messages];
+  const localeMessages = messages[locale as keyof typeof messages] || messages['nl'];
 
   return (
-    <NextIntlClientProvider locale={locale} messages={localeMessages}>
-
-    <html lang={locale} suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preload"
-          href="/images/app_store.svg"
-          as="image"
-        />
-        <link
-          rel="preload"
-          href="/images/google_play.svg"
-          as="image"
-        />
-        <link rel="icon" href="/header_icon.ico" sizes="any" />
-        <MetaData />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute={"class"}
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-                {children}
-        </ThemeProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={localeMessages} timeZone="Europe/Brussels" now={new Date()}>
+      <html lang={locale} suppressHydrationWarning>
+        <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link 
+            rel="preconnect" 
+            href="https://fonts.googleapis.com" 
+            crossOrigin="anonymous"
+          />
+          <MetaData />
+        </head>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          {children}
+        </body>
+      </html>
     </NextIntlClientProvider>
   );
 }
