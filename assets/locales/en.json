@@ -1,13 +1,11 @@
 {
     "meta": {
-        "title": "Rouleur - Cycling Manager",
-        "description": "Rouleur is a cycling manager for the real cycling fan"
+        "title": "Your Site Title",
+        "description": "Your site description"
     },
     "og": {
-        "title": "Rouleur - Cycling Manager",
-        "description": "Rouleur is a cycling manager for the real cycling fan",
-        "author": "Tim Claes",
-        "keywords": ["cycling", "cycling manager", "fantasy cycling", "scorito", "sporza"]
+        "title": "Your OG Title",
+        "description": "Your OG description"
     },
     "core": {
         "title": "Rouleur",
@@ -35,7 +33,6 @@
     "community_content": "Compete directly against your friends, family and colleagues!",
     "mini_league": "Analyze statistics and graphs after every race, and choose the right Powerup at the right time!",
     "reason_title": "Why Cyclists Love Rouleur",
-    "reason_content": "Compete with friends in Mini Leagues and connect with other cycling enthusiasts",
     "testimonial": "Testimonials",
     "testimonial_name_1": "Samuel W.",
     "testimonial_content_1": "Simply the best cycling manager app! The powerups are superb and add dynamics to the competition.",

@@ -11,3 +11,7 @@ export default function Home() {
         </main>
     )
 }
+
+export function generateStaticParams() {
+  return [{ locale: 'en' }, { locale: 'nl' }];
+}
