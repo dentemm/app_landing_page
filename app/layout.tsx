@@ -46,7 +46,7 @@ export default function RootLayout({
   const localeMessages = messages[locale as keyof typeof messages];
 
   return (
-    <NextIntlClientProvider locale={locale} messages={localeMessages}>
+    <NextIntlClientProvider locale={locale} messages={localeMessages} now={new Date()} timeZone="Europe/Brussels">
     <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -72,4 +72,3 @@ export default function RootLayout({
     </NextIntlClientProvider>
   );
 }
-
